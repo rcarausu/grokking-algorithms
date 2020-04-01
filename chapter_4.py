@@ -1,0 +1,49 @@
+"""
+Divide & Conquer
+It's a way of thinking about problems by reducing them to the base case,
+ and then using recursion to solve them.
+
+Quicksort
+
+"""
+
+
+# 4.1 Write out the code for he earlier sum function.
+def sum(items: []) -> int:
+    if not items:
+        return 0
+    else:
+        return items[0] + sum(items[1:])
+
+
+# 4.2 Write a recursive function to count the number of items in a list.
+def count_items(items: []) -> int:
+    if not items:
+        return 0
+    else:
+        return 1 + count_items(items[1:])
+
+
+# 4.3 Find the maximum number in a list
+def find_max(items: []) -> int:
+    if len(items) == 1:
+        return items[0]
+    if not items:
+        raise ValueError('list must contain at least one element')
+    if len(items) == 2:
+        return items[0] if items[0] > items[1] else items[1]
+    sub_max = max(items[1:])
+    return items[0] if items[0] > sub_max else sub_max
+
+
+# 4.4 Can you come up with the base case and recursive case for binary search?
+# Answer: base case is when the list has one element
+# Recursive case is splitting the list in two halves, throwing away one and calling
+# binary search on the remaining half
+
+
+if __name__ == '__main__':
+    print(sum([2, 3, 1]))
+    print(count_items([1, 2, 3]))
+    print(find_max([1, 2, 27, 3, 4]))
+
