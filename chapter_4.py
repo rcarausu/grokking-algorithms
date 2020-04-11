@@ -7,10 +7,18 @@ Quicksort
 Consists in sorting choosing a D&C strategy based on an element called 'pivot'.
 We separate the arrays, if it's the case, by comparing with this pivot and then we
 call quicksort recursively on the sub arrays.
+The pivot selection determines the execution time.
+    Best case scenario, O(n*log n)
+    Worst case scenario, O(n^2)
+
+Average scenario by selecting a random pivot is O(n log n).
 """
 
 
 # 4.1 Write out the code for he earlier sum function.
+from random import randrange
+
+
 def sum(items: []) -> int:
     if not items:
         return 0
@@ -47,9 +55,15 @@ def find_max(items: []) -> int:
 def quicksort(array: []) -> []:
     if len(array) < 2:
         return array
-    pivot = array[0]
-    less = [i for i in array[1:] if i <= pivot]
-    greater = [i for i in array[1:] if i > pivot]
+    pivot = array[randrange(len(array) - 1)]
+    less = []
+    greater = []
+    for i in array:
+        if i != pivot:
+            if i <= pivot:
+                less.append(i)
+            else:
+                greater.append(i)
 
     return quicksort(less) + [pivot] + quicksort(greater)
 
