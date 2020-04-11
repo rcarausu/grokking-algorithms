@@ -67,6 +67,21 @@ def quicksort(array: []) -> []:
 
     return quicksort(less) + [pivot] + quicksort(greater)
 
+# How long would each of these operations take in big O notation?
+# 4.5 Printing the value of each element in an array
+# A: O(n) because we iterate all values
+
+# 4.6 Doubling the value of each element in an array
+# A: This is to iterate all array O(n), and insert a new value, which is O(n) as well, so O(n)
+
+# 4.7 Doubling the value of just the first element in an array.
+# A: Search O(1) and insert O(n), so O(n)
+
+# 4.8 Creating a multiplication table with all the elements in the array. So if your array i
+# [2, 3, 7, 8, 10], you first multiply every element by 2, then multiply every element by 4,
+# then by 7, and so on.
+# A: We iterate all the array O(n), n times, so O(n^2).
+
 
 if __name__ == '__main__':
     print(sum([2, 3, 1]))
