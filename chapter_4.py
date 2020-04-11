@@ -4,7 +4,9 @@ It's a way of thinking about problems by reducing them to the base case,
  and then using recursion to solve them.
 
 Quicksort
-
+Consists in sorting choosing a D&C strategy based on an element called 'pivot'.
+We separate the arrays, if it's the case, by comparing with this pivot and then we
+call quicksort recursively on the sub arrays.
 """
 
 
@@ -42,8 +44,19 @@ def find_max(items: []) -> int:
 # binary search on the remaining half
 
 
+def quicksort(array: []) -> []:
+    if len(array) < 2:
+        return array
+    pivot = array[0]
+    less = [i for i in array[1:] if i <= pivot]
+    greater = [i for i in array[1:] if i > pivot]
+
+    return quicksort(less) + [pivot] + quicksort(greater)
+
+
 if __name__ == '__main__':
     print(sum([2, 3, 1]))
     print(count_items([1, 2, 3]))
     print(find_max([1, 2, 27, 3, 4]))
+    print(quicksort([23, 4, 1, 9, 29]))
 
