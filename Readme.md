@@ -25,3 +25,9 @@ Chapter 4: Quicksort
   - Divide & conquer
   - Quicksort
   - Big O notation revisited
+  
+ Chapter 5: Hash tables
+  - Hash functions
+  - Use cases
+  - Collisions
+  - Performance
