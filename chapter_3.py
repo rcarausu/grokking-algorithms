@@ -3,6 +3,10 @@ Recursion
 - When a function calls itself
 Base case -> when it stops
 Recursive case -> when it calls itself
+
+The problem is that if the recursive function grows too big,
+we may run out of memory. We can solve this with 'tail recursion',
+out of scope of this book.
 """
 
 

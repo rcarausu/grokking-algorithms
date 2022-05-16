@@ -5,7 +5,7 @@ It's a way of thinking about problems by reducing them to the base case,
 
 Quicksort
 Consists in sorting choosing a D&C strategy based on an element called 'pivot'.
-We separate the arrays, if it's the case, by comparing with this pivot and then we
+We separate the arrays, if it's the case, by comparing with this pivot, and then we
 call quicksort recursively on the sub arrays.
 The pivot selection determines the execution time.
     Best case scenario, O(n*log n)
