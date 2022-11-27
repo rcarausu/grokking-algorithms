@@ -60,4 +60,4 @@ Performance depends on how good the hash function is, by distributing items even
 # Answer: The B and D functions would be best.
 
 # 5.7 A mapping from book titles to authors. The titles are Maus, Fun Home and Watchmen.
-# Answer: The B, C and D functions wold be best.
+# Answer: The B, C and D functions would be best.
