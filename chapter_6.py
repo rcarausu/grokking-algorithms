@@ -58,7 +58,7 @@ from collections import deque
 def bfs_search(graph: dict, start_node: str, end_node: str) -> bool:
     search_queue = deque()
     search_queue += graph[start_node]
-    searched = []  # keep track of searches
+    searched = set()  # keep track of searches
     while search_queue:
         current_node = search_queue.popleft()
         if not current_node in searched:
@@ -66,12 +66,12 @@ def bfs_search(graph: dict, start_node: str, end_node: str) -> bool:
                 return True
             else:
                 search_queue += graph[current_node]
-                searched.append(current_node)
+                searched.add(current_node)
     return False
 
 
 def bfs_shortest_path(graph: dict, start_node: str, end_node: str) -> list:
-    explored = []
+    explored = set()
     queue = deque()
     # we use a queue of paths, we explore each possible path until we find the end node, then return that path
     queue.append([start_node])
@@ -90,7 +90,7 @@ def bfs_shortest_path(graph: dict, start_node: str, end_node: str) -> list:
                 queue.append(new_path)
                 if neighbor == end_node:
                     return new_path
-            explored.append(node)
+            explored.add(node)
     raise Exception('No paths found!')
 
 
