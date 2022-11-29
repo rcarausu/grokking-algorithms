@@ -48,12 +48,6 @@ def find_max(items: []) -> int:
     return items[0] if items[0] > sub_max else sub_max
 
 
-# 4.4 Can you come up with the base case and recursive case for binary search?
-# Answer: base case is when the list has one element
-# Recursive case is splitting the list in two halves, throwing away one and calling
-# binary search on the remaining half
-
-
 def quicksort(array: []) -> []:
     if len(array) < 2:
         return array
@@ -68,21 +62,6 @@ def quicksort(array: []) -> []:
                 greater.append(i)
 
     return quicksort(less) + [pivot] + quicksort(greater)
-
-# How long would each of these operations take in big O notation?
-# 4.5 Printing the value of each element in an array
-# A: O(n) because we iterate all values
-
-# 4.6 Doubling the value of each element in an array
-# A: This is to iterate all array O(n), and insert a new value, which is O(n) as well, so O(n)
-
-# 4.7 Doubling the value of just the first element in an array.
-# A: Search O(1) and insert O(n), so O(n)
-
-# 4.8 Creating a multiplication table with all the elements in the array. So if your array i
-# [2, 3, 7, 8, 10], you first multiply every element by 2, then multiply every element by 4,
-# then by 7, and so on.
-# A: We iterate all the array O(n), n times, so O(n^2).
 
 
 if __name__ == '__main__':

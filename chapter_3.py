@@ -17,14 +17,6 @@ Basic data-structure with two operations:
 """
 
 
-# Exercise 3.1
-# From that stack, we can say that we are calling a greet function with the Maggie variable,
-# which it's calling the greet2 function with the same variable name.
-
-# Exercise 3.2
-# A recursive function that runs forever will fill the stack and thus the memory.
-# The computer will crash.
-
 def factorial(x: int) -> int:
     if x == 1:
         return x

@@ -10,25 +10,6 @@ It requires a sorted list o perform the search.
 from typing import List
 
 
-# Exercise 1.1
-# log2 128 = 7
-
-# Exercise 1.2
-# log2 256 = 8
-
-# Exercise 1.3
-# O(log n), you can do it with binary search
-
-# Exercise 1.4
-# O(n)
-
-# Exercise 1.5
-# O(n)
-
-# Exercise 1.6
-# O(n), we do it until a certain limit but the time is still linear
-
-
 def binary_search(sorted_list: List, item: int) -> int:
     low = 0
     high = len(sorted_list) - 1

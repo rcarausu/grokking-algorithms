@@ -17,28 +17,6 @@ Total cost of the operation is O(n^2)
 """
 
 
-# Exercise 2.1
-# Better to use a list, since there are few reads and many inserts,
-# and we read the whole list only once at the end of the month.
-
-# Exercise 2.2
-# Better a list, since we mostly insert and delete items from it.
-
-# Exercise 2.3
-# As an array, since reading is O(1), otherwise the search would be O(n)
-
-# Exercise 2.4
-# The downsides for an array for inserts is that you need to calculate if you have enough memory each time,
-# if not, we need to copy the whole chunk into a new data structure.
-# If we use binary search for logins and we add new users to the array, it can happen that the search
-# is not performed correctly.
-
-# Exercise 2.5
-# Searching is slower than arrays, but faster than linked lists since we divide by letters of the alphabet.
-# Insertion is faster than arrays, since the size of the array is fixed and we don't deal with that, and more
-# or less the same compared with linked lists
-
-
 def find_smallest_index(arr: []) -> int:
     if len(arr) > 0:
         smallest = arr[0]
