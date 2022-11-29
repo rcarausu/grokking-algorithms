@@ -1,8 +1,14 @@
 """
+1. INTRODUCTION TO ALGORITHMS
+
 Binary Search
 - It takes logarithmic time (or log time) guesses to find the answer.
 Expressed as O(log n) in Big O notation.
+
+It requires a sorted list o perform the search.
 """
+from typing import List
+
 
 # Exercise 1.1
 # log2 128 = 7
@@ -23,13 +29,13 @@ Expressed as O(log n) in Big O notation.
 # O(n), we do it until a certain limit but the time is still linear
 
 
-def binary_search(list, item):
+def binary_search(sorted_list: List, item: int) -> int:
     low = 0
-    high = len(list) - 1
+    high = len(sorted_list) - 1
 
     while low <= high:
         mid = (low + high) // 2  # // floor division
-        guess = list[mid]
+        guess = sorted_list[mid]
 
         if guess == item:
             return mid

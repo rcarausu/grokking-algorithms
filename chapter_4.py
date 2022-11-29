@@ -1,4 +1,6 @@
 """
+4. QUICKSORT
+
 Divide & Conquer
 It's a way of thinking about problems by reducing them to the base case,
  and then using recursion to solve them.
@@ -15,7 +17,7 @@ Average scenario by selecting a random pivot is O(n log n).
 """
 
 
-# 4.1 Write out the code for he earlier sum function.
+# 4.1 Write out the code for the earlier sum function.
 from random import randrange
 
 

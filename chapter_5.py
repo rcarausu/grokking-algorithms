@@ -1,9 +1,12 @@
 """
-  Hash tables
+5. HASH TABLES
 
 They use a function called 'hash function' that given a string (sequence of bytes) it returns
 a number. It always returns the same number for a given string. This way we can use hash functions
-to associate strings with array values, which are accessed via the numbers returned by the function
+to associate strings with array values, which are accessed via the numbers returned by the function.
+
+- They need to be consistent.
+- They should map different words to different numbers.
 """
 
 # Which of these hash functions are consistent?

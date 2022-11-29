@@ -1,4 +1,6 @@
 """
+2. SELECTION SORT
+
 Sorting
 - Arrays: items stored consecutively in memory.
     Easy to navigate randomly between them with simple arithmetic.
@@ -37,7 +39,7 @@ Total cost of the operation is O(n^2)
 # or less the same compared with linked lists
 
 
-def find_smallest_index(arr: list):
+def find_smallest_index(arr: []) -> int:
     if len(arr) > 0:
         smallest = arr[0]
         smallest_index = 0
@@ -49,7 +51,7 @@ def find_smallest_index(arr: list):
     return None
 
 
-def selection_sort(arr: list):
+def selection_sort(arr: []) -> []:
     new_array = []
 
     for i in range(0, len(arr)):
