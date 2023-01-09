@@ -20,7 +20,7 @@ second-degree connections.
 
 It needs to search on the order the elements are added, to do this it uses 'queues'.
 
-Queues
+## Queues
 
 They are a basic data structure with 2 operations:
 - Enqueue: add an element to the back of the queue.
@@ -31,7 +31,7 @@ Queues are FIFO data structures (First In, First Out), in contrast to stacks, wh
 In Python, we can use hash tables (dictionaries) to implement a graph. Hash tables have no order, so it doesn't
 matter the order in which we add the nodes.
 
-Algorithm
+## Algorithm
 
 1. Keep a queue containing the nodes to check.
 2. Pop (dequeue) a node off the queue.
@@ -43,7 +43,7 @@ Algorithm
 
 To avoid duplicates and infinite loops, we need to mark already processed nodes in a separate array.
 
-Performance
+## Performance
 
 If we search an entire network, we'll follow each ege, so Oedges).
 We also keep a queue of every node to search. Adding one node is O(1), adding all nodes is O(#nodes).

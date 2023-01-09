@@ -10,7 +10,8 @@ we may run out of memory or a stack overflow can occur.
 
 We can solve this with 'tail recursion', out of scope of this book.
 
-Stack
+## Stack
+
 Basic data-structure with two operations:
     - push: add item to the top of the stack
     - pop: remove item from the top of the stack and read it.

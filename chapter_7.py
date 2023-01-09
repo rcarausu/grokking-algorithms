@@ -4,7 +4,7 @@
 It works with weighted graphs, where each edge has a weight.
 BFS fins the lowest number of segments for a bath, Dijkstra's finds the fastest path instead.
 
-Working with Dijkstra's Algorithm
+## Working with Dijkstra's Algorithm
 
 4 steps
 1. Find the 'cheapest' node.
@@ -18,7 +18,7 @@ Dijkstra's only works with DAG (Directed Acyclic Graphs), and it can't be used w
 To find the shortest path for negative weight edges, we can use the 'Bellman-Ford' algorithm, which is out of the
 scope of this book.
 
-Implementation
+## Implementation
 
 We need 3 hash tables. One for representing the graph (hash table of hash tables, since for each node we also store
 its weight), another for the costs and another for the parents.

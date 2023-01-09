@@ -1,11 +1,13 @@
 """
 4. QUICKSORT
 
-Divide & Conquer
+## Divide & Conquer
+
 It's a way of thinking about problems by reducing them to the base case,
  and then using recursion to solve them.
 
-Quicksort
+## Quicksort
+
 Consists in sorting choosing a D&C strategy based on an element called 'pivot'.
 We separate the arrays, if it's the case, by comparing with this pivot, and then we
 call quicksort recursively on the sub arrays.

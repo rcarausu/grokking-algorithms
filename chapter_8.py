@@ -5,7 +5,7 @@ A greedy algorithm is simple, at each step, pick the optimal move.
 In technical terms, at each step you pick the locally optimal solution, and in the end you're
 left with the globally optimal solution (or an approximation).
 
-The set-covering problem
+## The set-covering problem
 
 Suppose a radio show who wants to reach listeners on all 50 states.
 You have to decide which stations to play in order to reach all the listeners.
@@ -22,7 +22,7 @@ Problem is that it takes O(2^n) time to calculate each subset, which can transla
 
 There isn't any algorithm fast enough!
 
-Approximation algorithms
+## Approximation algorithms
 
 We can solve it with a greedy algorithm
 
@@ -38,12 +38,12 @@ This is an 'approximation algorithm'. They are judged by:
 
 In this case, it runs in O(n^2) time, where n is the number of stations.
 
-Sets
+## Sets
 
 Basic datastructure where every item appears only once, then don't allow duplicates.
 Basic operations are union (|), intersection (&) and difference (-).
 
-NP-Complete problems
+## NP-Complete problems
 
 These are famously hard problems (n!) to resolve where (most people) think it is not possible to find an algorithm
 to solve them, only approximations. Most famous examples are the travelling-salesperson and set-covering problem.

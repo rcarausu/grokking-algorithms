@@ -8,7 +8,7 @@ to associate strings with array values, which are accessed via the numbers retur
 - They need to be consistent.
 - They should map different words to different numbers.
 
-Collisions
+## Collisions
 
 It's impossible for hash tables to store all the items in existence, so collisions can occur 
 (depending on how good your hash functon is). A collision is when two elements are assigned
@@ -18,7 +18,7 @@ list when inserting in an already occupied slot.
 
 Load factor = nr of items / total nr of slots
 
-  Performance
+## Performance
 
 Best case: Read, Write, Insert take O(1) constant time
 Worst case: Read, Write Insert take O(n), linear time
